@@ -25,7 +25,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon far fa-clock"></i>
               <p>
                 Presensi
                 <i class="right fas fa-angle-left"></i>
@@ -34,13 +34,13 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-sign-in-alt"></i>
                   <p>Presensi Masuk</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-sign-out-alt"></i>
                   <p>Presensi Keluar</p>
                 </a>
               </li>
@@ -69,6 +69,14 @@
                 </a>
               </li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('logout') }}" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                logout
+              </p>
+            </a>
           </li>
 
         </ul>
