@@ -25,4 +25,6 @@ Route::group(['middleware' => ['auth','ceklevel:karyawan']], function () {
     route::get('/presensi-masuk', [PresensiController::class,'index'])->name('presensi-masuk');
     route::get('/presensi-keluar', [PresensiController::class,'keluar'])->name('presensi-keluar');
     route::post('/ubah-presensi', [PresensiController::class,'presensipulang'])->name('ubah-presensi');
+    route::get('filter-data',[PresensiController::class,'halamanrekap'])->name('filter-data');
+    route::get('filter-data/{tglawal}/{tglakhir}',[PresensiController::class,'tampildatakeseluruhan'])->name('filter-data-keseluruhan');
 });
